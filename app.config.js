@@ -1,7 +1,10 @@
-{
-  "expo": {
+import 'dotenv/config'
+
+
+export default {
     "name": "uber",
     "slug": "uber",
+    "jsEngine": "hermes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +31,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    'extra': {
+      env: process.env.ENV,
+      key: process.env.GOOGLE_MAPS_APIKEY
     }
   }
-}
+
